@@ -1,0 +1,55 @@
+### Budget Plan ####
+
+A simple, command-line prompted budget
+
+## Classes ##
+
+Budget {
+    self: name, date, available, categories
+
+    methods: 
+        __str__
+        rename
+        getLeft  # Amount left total
+
+}
+
+CategoryList {
+    self:
+        title
+        priority
+        total
+        available
+        status
+        items::List<CategoryItem>
+
+    methods:
+        __init__
+        __str__
+        addItem
+        removeItem
+        getAvailable
+
+}
+
+CategoryItem {
+    self:
+        amount
+        subject
+        date
+
+    def __init__(self, amount, subject, date):
+            self.amount = amount
+            self.subject = subject
+            self.date = date
+            
+
+
+    __str__
+
+    def __add_(self, other):
+        if isinstance(other, CategoryItem):
+            return CategoryItem(self.amount + other.amount)
+        return NotImplemented
+
+}
