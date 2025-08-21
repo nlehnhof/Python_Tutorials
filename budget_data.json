@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Dates",
+        "priority": 1,
+        "total": 500.0,
+        "available": 460.0,
+        "status": "Active",
+        "items": [
+            {
+                "subject": "Date with Mariah",
+                "amount": 20.0,
+                "date": "8/20/25"
+            },
+            {
+                "subject": "Date with Grace",
+                "amount": -20.0,
+                "date": "8/20/25"
+            }
+        ]
+    },
+    {
+        "title": "Gas",
+        "priority": 3,
+        "total": 100.0,
+        "available": 55.0,
+        "status": "Active",
+        "items": [
+            {
+                "subject": "Telluride",
+                "amount": -45.0,
+                "date": "8/19"
+            }
+        ]
+    }
+]
